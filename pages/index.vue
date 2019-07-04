@@ -94,18 +94,18 @@
     head() {
       return {
         meta: [],
-        link: [
-          {
-            rel: 'stylesheet',
-            href: 'https://fonts.googleapis.com/css?family=Crimson+Text:400|Montserrat:200,300'
-          },
+        // link: [
+        //   {
+        //     rel: 'stylesheet',
+        //     href: 'https://fonts.googleapis.com/css?family=Crimson+Text:400|Montserrat:200,300'
+        //   }
           // {
           //   rel: 'stylesheet',
           //   href: 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'
           // },
-          { rel: 'stylesheet', href: 'assets/css/style.css' },
-          { rel: 'stylesheet', href: 'assets/css/landing-2.css' }
-        ],
+          // { rel: 'stylesheet', href: 'assets/css/style.css' },
+          // { rel: 'stylesheet', href: 'assets/css/landing-2.css' }
+        // ]
         // script: [
         //   {
         //     src: 'https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js'
@@ -116,7 +116,7 @@
   }
 </script>
 
-<style>
+<style lang="scss">
 
   html {
     scroll-behavior: smooth;
@@ -165,4 +165,54 @@
   .pb_text-indigo {
     color: #4E3188 !important;
   }
+
+  @import"~bootstrap/scss/functions";
+  @import"~bootstrap/scss/variables";
+  @import"~bootstrap/scss/mixins";
+  @import"~bootstrap/scss/root";
+  @import"~bootstrap/scss/reboot";
+  @import"~bootstrap/scss/type";
+  /*@import"~bootstrap/scss/images";*/
+  /*@import"~bootstrap/scss/code";*/
+  @import"~bootstrap/scss/grid";
+  /*@import"~bootstrap/scss/tables";*/
+  @import"~bootstrap/scss/forms";
+  @import"~bootstrap/scss/buttons";
+  @import"~bootstrap/scss/transitions";
+  /*@import"~bootstrap/scss/dropdown";*/
+  /*@import"~bootstrap/scss/button-group";*/
+  /*@import"~bootstrap/scss/input-group";*/
+  /*@import"~bootstrap/scss/custom-forms";*/
+  @import"~bootstrap/scss/nav";
+  @import"~bootstrap/scss/navbar";
+  @import"~bootstrap/scss/card";
+  /*@import"~bootstrap/scss/breadcrumb";*/
+  /*@import"~bootstrap/scss/pagination";*/
+  /*@import"~bootstrap/scss/badge";*/
+  /*@import"~bootstrap/scss/jumbotron";*/
+  /*@import"~bootstrap/scss/alert";*/
+  /*@import"~bootstrap/scss/progress";*/
+  /*@import"~bootstrap/scss/media";*/
+  @import"~bootstrap/scss/list-group";
+  /*@import"~bootstrap/scss/close";*/
+  /*@import"~bootstrap/scss/toasts";*/
+  /*@import"~bootstrap/scss/modal";*/
+  /*@import"~bootstrap/scss/tooltip";*/
+  /*@import"~bootstrap/scss/popover";*/
+  @import"~bootstrap/scss/carousel";
+  /*@import"~bootstrap/scss/spinners";*/
+  @import"~bootstrap/scss/utilities";
+  /*@import"~bootstrap/scss/print";*/
+
+  @import "../assets/scss/fonts";
+
+  @import "../assets/scss/style";
+  /*@import "../static/assets/css/style.css";*/
+  @import "../assets/scss/landing-2";
+
+  .bg-light {
+    background-color: #f2f4f9 !important;
+  }
+
+
 </style>
