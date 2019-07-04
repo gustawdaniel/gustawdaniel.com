@@ -1,32 +1,18 @@
 language: node_js
 node_js:
-  - "8"
-
+  - '8'
 cache:
   directories:
-    - "node_modules"
-
+    - node_modules
 branches:
   only:
     - master
-
 install:
   - npm install
   - npm run generate
-
 script:
   - echo "Skipping tests"
-
-#deploy:
-#  provider: pages
-#  skip-cleanup: true
-#  github-token: $GITHUB_ACCESS_TOKEN  # Set in travis-ci.org dashboard, marked secure https://docs.travis-ci.com/user/deployment/pages/#Setting-the-GitHub-token
-#  target-branch: gh-pages
-#  local-dir: dist
-#  on:
-#    branch: master
-    
-#deploy:
-#  provider: firebase
-#  token:
-#    secure: "YOUR ENCRYPTED token"
+deploy:
+  provider: firebase
+  token:
+    secure: "vIbrdcrPvzpdiz43x+sh8/V1XYEduNDuZhYWlQFkTS3WW6uRvq23vEKhXMczKO8K8vA3bxgSSixLzAEaUR+t1tj9jP4917k7tf+w+7rlBrVJ0DVGGungvvuDlEq8biJVI/QvM09JeXXZIYJUF3/YRb8H6wcKNhj/Q+rCRtFUluUdYcb67keKaIS7ET29wkF161zY0EJ810xjy5zdwSwLP+i4AiV0YV26DjqqdDJeSxTxjt4zT1+ol/OObZ1hXYabfk+8gaU2o040NKdBWNPXYQEQagc1XIdrZCllAwCeM7DHMjGZ/BMIY+/KXng2uIUL17NQ+toU2nxP+x3i+FeYZNfrvIGePlEdUf7VBayXDDMDDuWqIXWGhkX4quhk4d/thoJSwWxrKFrWwp9U7s/xiHagz9Gfmcj3Ok4+hPtC/oYL9dxaB+faP86wsARb5cOM/C8cBFQ2cSTLiasGfs1Cdb2MTiyAIw/7rohL8Hyk1851q4uAIuKN22yT1GSInCwjBLxFSa3G+CmbnBQCGX8JXmbPih8oUsLy73P4Ja+g5td16zCORSKgVplykyMwVjXBQ9IJwwzTRmh4oINz1J2/ixyrrDErGVVtRk6/GlKbqcKBDs5mGJ2PltBtPIc1UXYWrOUyqwyABrN88e+tDHyr2U5aMYcjMlqwLzjQ58rEweU="
