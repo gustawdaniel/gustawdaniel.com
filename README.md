@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/gustawdaniel/gustawdaniel.com.svg?branch=master)](https://travis-ci.org/gustawdaniel/gustawdaniel.com)
+
 # gustawdaniel.com.v2
 
 > My dazzling Nuxt.js project
