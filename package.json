@@ -1,7 +1,7 @@
 {
-  "name": "gustawdaniel.com.v2",
+  "name": "gustawdaniel.com",
   "version": "1.0.0",
-  "description": "My dazzling Nuxt.js project",
+  "description": "Web Developer specialised in super fast prototyping.",
   "author": "Daniel Gustaw",
   "private": true,
   "scripts": {
