@@ -13,8 +13,15 @@ install:
 script:
   - pwd
   - ls
-before_deploy: npm run generate
+before_deploy:
+  - npm run generate
+  - pwd
+  - ls
 deploy:
   provider: firebase
+  skip-cleanup: true
   token:
     secure: "vIbrdcrPvzpdiz43x+sh8/V1XYEduNDuZhYWlQFkTS3WW6uRvq23vEKhXMczKO8K8vA3bxgSSixLzAEaUR+t1tj9jP4917k7tf+w+7rlBrVJ0DVGGungvvuDlEq8biJVI/QvM09JeXXZIYJUF3/YRb8H6wcKNhj/Q+rCRtFUluUdYcb67keKaIS7ET29wkF161zY0EJ810xjy5zdwSwLP+i4AiV0YV26DjqqdDJeSxTxjt4zT1+ol/OObZ1hXYabfk+8gaU2o040NKdBWNPXYQEQagc1XIdrZCllAwCeM7DHMjGZ/BMIY+/KXng2uIUL17NQ+toU2nxP+x3i+FeYZNfrvIGePlEdUf7VBayXDDMDDuWqIXWGhkX4quhk4d/thoJSwWxrKFrWwp9U7s/xiHagz9Gfmcj3Ok4+hPtC/oYL9dxaB+faP86wsARb5cOM/C8cBFQ2cSTLiasGfs1Cdb2MTiyAIw/7rohL8Hyk1851q4uAIuKN22yT1GSInCwjBLxFSa3G+CmbnBQCGX8JXmbPih8oUsLy73P4Ja+g5td16zCORSKgVplykyMwVjXBQ9IJwwzTRmh4oINz1J2/ixyrrDErGVVtRk6/GlKbqcKBDs5mGJ2PltBtPIc1UXYWrOUyqwyABrN88e+tDHyr2U5aMYcjMlqwLzjQ58rEweU="
+  local-dir: dist
+  on:
+    branch: master
