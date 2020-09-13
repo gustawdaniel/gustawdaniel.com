@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  web:
+    build: .
+    image: fastify-app:1.0.0
+    ports:
+      - '23022:3000'
+    environment:
+      - VIRTUAL_HOST=${DOMAINS}
+      - LETSENCRYPT_HOST=${DOMAINS}
+      - LETSENCRYPT_EMAIL=gustaw.daniel@gmail.com
+      - VIRTUAL_PORT=23022
